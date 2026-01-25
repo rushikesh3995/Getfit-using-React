@@ -386,7 +386,7 @@ hr {
 
 
     /* Tablet screens and below */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .getapphead h1 {
     font-size: 2em;
     line-height: 1.2;
@@ -413,7 +413,7 @@ hr {
 }
 
 /* Mobile screens (phones) */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .getapphead h1 {
     font-size: 1.6em;
   }
@@ -432,4 +432,135 @@ hr {
     width: 100%;
     text-align: left;
   }
+} */
+
+
+
+
+/* Tablet screens and below */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header ul {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+
+  .header ul li {
+    margin: 10px 0;
+  }
+
+  .getapphead h1 {
+    font-size: 2em;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .getappheader {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .content-box,
+  section,
+  .row,
+  .login-box {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .col-md-6 {
+    flex: 1 1 100%;
+  }
+
+  table, th, td {
+    font-size: 0.95em;
+    padding: 0.5em;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    display: block;
+    overflow-x: auto; /* allows horizontal scroll if needed */
+  }
+
+  .form-select {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .login-box {
+    width: 90%;
+    margin: 20px auto;
+  }
 }
+
+/* Mobile screens (phones) */
+@media (max-width: 480px) {
+  .header {
+    padding: 10px;
+  }
+
+  .header ul {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header ul li {
+    margin: 8px 0;
+  }
+
+  .getapphead h1 {
+    font-size: 1.6em;
+  }
+
+  .getappheader {
+    font-size: 1.2em;
+  }
+
+  .content-box,
+  section,
+  .row,
+  .login-box {
+    padding: 15px;
+    margin: 15px auto;
+  }
+
+  table, th, td {
+    font-size: 0.85em;
+    padding: 0.4em;
+  }
+
+  th, td {
+    display: block; /* stack cells for readability */
+    width: 100%;
+    text-align: left;
+  }
+
+  .btn-primary {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .form-select {
+    width: 100%;
+    margin: 15px auto;
+  }
+
+  .login-box {
+    width: 95%;
+    margin: 15px auto;
+    padding: 20px;
+  }
+}
+
+
