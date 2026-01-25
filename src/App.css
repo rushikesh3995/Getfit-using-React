@@ -369,70 +369,9 @@ hr {
   border: none;
   border-top: 1px solid #ddd;
   margin: 30px 0;
-/* }
-@media (max-width: 768px) {
-  .getapphead h1 {
-    font-size: 2em;
-  }
-
-  .getappheader {
-    font-size: 1.5em;
-  }
-
-  table, th, td {
-    font-size: 0.95em;
-  }
-} */
-
-
-    /* Tablet screens and below */
-/* @media (max-width: 768px) {
-  .getapphead h1 {
-    font-size: 2em;
-    line-height: 1.2;
-    text-align: center;
-  }
-
-  .getappheader {
-    font-size: 1.5em;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-
-  table, th, td {
-    font-size: 0.95em;
-    padding: 0.5em;
-  }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    display: block;
-    overflow-x: auto; /* allows horizontal scroll if needed */
-  }
 }
 
-/* Mobile screens (phones) */
-/* @media (max-width: 480px) {
-  .getapphead h1 {
-    font-size: 1.6em;
-  }
 
-  .getappheader {
-    font-size: 1.2em;
-  }
-
-  table, th, td {
-    font-size: 0.85em;
-    padding: 0.4em;
-  }
-
-  th, td {
-    display: block; /* stack cells for readability */
-    width: 100%;
-    text-align: left;
-  }
-} */
 
 
 
@@ -448,22 +387,37 @@ hr {
   .header ul {
     flex-direction: column;
     margin: 10px 0;
+    padding: 0;
   }
 
   .header ul li {
-    margin: 10px 0;
+    margin: 8px 0;
   }
 
-  .getapphead h1 {
-    font-size: 2em;
-    line-height: 1.2;
-    text-align: center;
+  .header .list {
+    margin: 0;
+    padding: 0;
   }
 
-  .getappheader {
-    font-size: 1.5em;
+  .secondli {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pass {
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .click {
+    margin: 10px auto;
+    width: 90%;
+  }
+
+  .calcu {
+    margin: 20px auto;
     text-align: center;
-    margin-bottom: 1rem;
   }
 
   .content-box,
@@ -479,18 +433,6 @@ hr {
     flex: 1 1 100%;
   }
 
-  table, th, td {
-    font-size: 0.95em;
-    padding: 0.5em;
-  }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    display: block;
-    overflow-x: auto; /* allows horizontal scroll if needed */
-  }
-
   .form-select {
     width: 100%;
     margin: 20px auto;
@@ -499,6 +441,27 @@ hr {
   .login-box {
     width: 90%;
     margin: 20px auto;
+  }
+
+  .getapphead h1 {
+    font-size: 2em;
+    line-height: 1.2;
+  }
+
+  .getappheader {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  table, th, td {
+    font-size: 0.95em;
+    padding: 0.5em;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    width: 100%;
   }
 }
 
@@ -515,7 +478,12 @@ hr {
   }
 
   .header ul li {
-    margin: 8px 0;
+    margin: 6px 0;
+  }
+
+  .secondli {
+    flex-direction: column;
+    padding: 5px;
   }
 
   .getapphead h1 {
@@ -540,7 +508,7 @@ hr {
   }
 
   th, td {
-    display: block; /* stack cells for readability */
+    display: block;
     width: 100%;
     text-align: left;
   }
@@ -561,6 +529,20 @@ hr {
     margin: 15px auto;
     padding: 20px;
   }
+
+  .jackets,
+  .Shoes,
+  .t-shirt {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .jackets a,
+  .Shoes a,
+  .t-shirt a {
+    margin: 10px 0;
+  }
 }
+
 
 
