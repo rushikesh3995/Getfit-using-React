@@ -48,6 +48,7 @@
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 .btn-outline {
   background: transparent;
   border: 1px solid white;
@@ -406,10 +407,103 @@
   }
 
   .hero-btn {
+=======
+
+
+
+
+
+/* Tablet screens and below */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header ul {
+    flex-direction: column;
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  .header ul li {
+    margin: 8px 0;
+  }
+
+  .header .list {
+    margin: 0;
+    padding: 0;
+  }
+
+  .secondli {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pass {
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .click {
+    margin: 10px auto;
+    width: 90%;
+  }
+
+  .calcu {
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .content-box,
+  section,
+  .row,
+  .login-box {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .col-md-6 {
+    flex: 1 1 100%;
+  }
+
+  .form-select {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .login-box {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .getapphead h1 {
+    font-size: 2em;
+    line-height: 1.2;
+  }
+
+  .getappheader {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  table, th, td {
+    font-size: 0.95em;
+    padding: 0.5em;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+>>>>>>> 179c1869c4a3e1365f1cc35294dcd86a51f88a7b
     width: 100%;
   }
 }
 
+<<<<<<< HEAD
 /* SMALL MOBILE */
 @media (max-width: 480px) {
 
@@ -430,3 +524,86 @@
     font-size: 14px;
   }
 }
+=======
+/* Mobile screens (phones) */
+@media (max-width: 480px) {
+  .header {
+    padding: 10px;
+  }
+
+  .header ul {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header ul li {
+    margin: 6px 0;
+  }
+
+  .secondli {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .getapphead h1 {
+    font-size: 1.6em;
+  }
+
+  .getappheader {
+    font-size: 1.2em;
+  }
+
+  .content-box,
+  section,
+  .row,
+  .login-box {
+    padding: 15px;
+    margin: 15px auto;
+  }
+
+  table, th, td {
+    font-size: 0.85em;
+    padding: 0.4em;
+  }
+
+  th, td {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .btn-primary {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .form-select {
+    width: 100%;
+    margin: 15px auto;
+  }
+
+  .login-box {
+    width: 95%;
+    margin: 15px auto;
+    padding: 20px;
+  }
+
+  .jackets,
+  .Shoes,
+  .t-shirt {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .jackets a,
+  .Shoes a,
+  .t-shirt a {
+    margin: 10px 0;
+  }
+}
+
+
+
+>>>>>>> 179c1869c4a3e1365f1cc35294dcd86a51f88a7b
