@@ -1,0 +1,127 @@
+/* PAGE */
+.elite-page {
+  font-family: "Segoe UI", sans-serif;
+  background: #0d0d0d;
+  color: #fff;
+}
+
+/* HERO */
+.elite-hero {
+  height: 60vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+    url("https://images.unsplash.com/photo-1558611848-73f7eb4001ab") center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+
+.elite-hero h1 {
+  font-size: 60px;
+  letter-spacing: 2px;
+  color: #ff3b3b;
+}
+
+.elite-hero p {
+  font-size: 20px;
+  color: #ccc;
+}
+
+/* BUTTON */
+.elite-btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  /* background: linear-gradient(135deg, #ff3b3b, #ff7b00); */
+  /* color: #fff; */
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.elite-btn:hover {
+  transform: scale(1.05);
+}
+
+/* INTRO */
+.elite-intro {
+  text-align: center;
+  padding: 60px 10%;
+}
+
+.elite-intro h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.elite-intro p {
+  color: #bbb;
+}
+
+/* FEATURES GRID */
+.elite-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 40px 10%;
+}
+
+/* FEATURE CARD */
+.feature-card {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 15px;
+  transition: 0.3s;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  background: #222;
+}
+
+.feature-card h3 {
+  color: #ff3b3b;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* CTA */
+.elite-cta {
+  text-align: center;
+  padding: 70px 20px;
+  background: #000;
+}
+
+.elite-cta h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.elite-cta p {
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.elite-btn.big {
+  padding: 15px 40px;
+  font-size: 18px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .elite-features {
+    grid-template-columns: 1fr;
+  }
+
+  .elite-hero h1 {
+    font-size: 40px;
+  }
+}

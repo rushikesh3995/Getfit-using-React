@@ -1,24 +1,69 @@
-function Getfithome(){
-    return(
-        <>
-        <h1 style={{textAlign:"center"}}>🏠 Transform Your Fitness with the HOME Plan </h1>
+import "./getfit-home.css";
 
-       <h4>Price: ₹1,160/month</h4>
+function Getfithome() {
+  return (
+    <div className="gf-home-page">
 
-<p>Stay fit, strong, and consistent—all from the comfort of your home. The HOME Plan is your personal fitness companion, designed for those who prefer flexibility and freedom over gym schedules. Whether you’re a beginner or looking to maintain your fitness routine, this plan gives you everything you need to stay on track, anytime, </p>
-<ul>
-<li>Benefits & Features:</li>
-<li>✅ Unlimited Smart Workout Plans – Get customized workout programs built around your goals and fitness level.</li>
-<li>✅ Unlimited At-Home Workouts – Access a huge library of guided home workouts—HIIT, yoga, dance, strength training, and more.</li>
-<li>✅ No Gym Required – Perfect for busy professionals, stay-at-home parents, or anyone who loves training in their own space.</li>
-<li>✅ Train Anytime, Anywhere – Morning, noon, or night—your schedule, your rules.</li>
-<li>✅ Expert Virtual Guidance – Follow workouts curated by certified trainers to ensure results.</li>
-<li>✅ Track Progress Easily – Stay motivated with easy performance tracking and progress insights.</li>
-<li>✅ Affordable & Effective – Get premium fitness features without expensive gym fees.</li>
-</ul>
+      {/* HERO */}
+      <section className="gf-home-hero">
+        <h1>HOME FITNESS PLAN</h1>
+        <p>Your Body. Your Space. Your Rules.</p>
+        <button className="gf-home-btn">Start Home Workout</button>
+      </section>
 
-<h2>🔥 Join the HOME Plan today and take charge of your health—your body, your space, your pace.</h2>
-        </>
-    )
+      {/* INTRO */}
+      <section className="gf-home-intro">
+        <h2>Fitness That Fits Your Lifestyle</h2>
+        <p>
+          No gym? No problem. Stay consistent, stay active, and stay strong—
+          right from your home.
+        </p>
+      </section>
+
+      {/* FEATURES */}
+      <section className="gf-home-features">
+
+        <div className="gf-home-card">
+          <h3>Smart Workout Plans</h3>
+          <p>Personalized programs designed for your goals.</p>
+        </div>
+
+        <div className="gf-home-card">
+          <h3>Unlimited Workouts</h3>
+          <p>HIIT, yoga, strength, dance & more anytime.</p>
+        </div>
+
+        <div className="gf-home-card">
+          <h3>No Gym Needed</h3>
+          <p>Train comfortably in your own space.</p>
+        </div>
+
+        <div className="gf-home-card">
+          <h3>Flexible Timing</h3>
+          <p>Workout whenever it suits your schedule.</p>
+        </div>
+
+        <div className="gf-home-card">
+          <h3>Expert Guidance</h3>
+          <p>Trainer-designed workouts for real results.</p>
+        </div>
+
+        <div className="gf-home-card">
+          <h3>Track Progress</h3>
+          <p>Monitor your improvement and stay motivated.</p>
+        </div>
+
+      </section>
+
+      {/* CTA */}
+      <section className="gf-home-cta">
+        <h2>All this for just ₹1,160/month</h2>
+        <p>Fitness made simple, affordable, and accessible.</p>
+        <button className="gf-home-btn big">Join HOME Plan</button>
+      </section>
+
+    </div>
+  );
 }
+
 export default Getfithome;

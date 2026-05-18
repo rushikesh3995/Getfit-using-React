@@ -1,0 +1,258 @@
+/* ================= PRICING TABLE ================= */
+
+.pricing-table-container {
+  min-height: auto;
+  background: white;
+  color: black;
+
+  margin: 60px 130px;
+  padding: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: Arial, sans-serif;
+  border-radius: 15px;
+
+  box-shadow: 0 5px 25px rgba(0,0,0,0.12);
+
+  overflow-x: auto;
+}
+
+/* TABLE */
+
+.pricing-main-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  min-width: 750px;
+}
+
+/* HEADER */
+
+.pricing-main-table th {
+  background: #0f172a;
+  color: white;
+
+  padding: 24px 18px;
+
+  font-size: 24px;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+.pricing-highlight {
+  color: #ff4d4d !important;
+}
+
+/* TD */
+
+.pricing-main-table td {
+  padding: 22px 18px;
+
+  color: #111827;
+
+  border-bottom: 1px solid #d1d5db;
+
+  font-size: 16px;
+}
+
+/* FEATURE */
+
+.pricing-feature {
+  text-align: left;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  color: #111827;
+
+  min-width: 220px;
+}
+
+/* CHECK */
+
+.pricing-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 38px;
+  height: 38px;
+
+  border-radius: 50%;
+  border: 2px solid black;
+
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* CROSS */
+
+.pricing-cross {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 38px;
+  height: 38px;
+
+  border-radius: 50%;
+  border: 2px solid #ff4d4d;
+
+  color: #ff4d4d;
+
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* REMOVE OLD EFFECT */
+
+.pricing-main-table th,
+.pricing-main-table td {
+  background-image: none;
+}
+
+/* HOVER */
+
+.pricing-main-table tbody tr:hover {
+  background: #f8fafc;
+  transition: 0.3s;
+}
+
+/* ================= LARGE TABLET ================= */
+
+@media (max-width: 1200px) {
+
+  .pricing-table-container {
+    margin: 40px 40px;
+    padding: 25px;
+  }
+
+  .pricing-main-table th {
+    font-size: 20px;
+  }
+
+  .pricing-main-table td {
+    font-size: 15px;
+  }
+
+  .pricing-feature {
+    font-size: 16px;
+  }
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 992px) {
+
+  .pricing-table-container {
+    margin: 30px 20px;
+    padding: 20px;
+  }
+
+  .pricing-main-table {
+    min-width: 680px;
+  }
+
+  .pricing-main-table th,
+  .pricing-main-table td {
+    padding: 16px;
+  }
+
+  .pricing-check,
+  .pricing-cross {
+    width: 34px;
+    height: 34px;
+    font-size: 16px;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+
+
+
+
+
+
+
+
+/* ================= MOBILE RESPONSIVE FIX ================= */
+
+@media (max-width: 768px) {
+
+  .pricing-table-container {
+    margin: 20px 10px;
+    padding: 0;
+    border-radius: 12px;
+
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .pricing-main-table {
+    min-width: 520px;
+  }
+
+  .pricing-main-table th {
+    font-size: 14px;
+    padding: 14px 10px;
+    white-space: nowrap;
+  }
+
+  .pricing-main-table td {
+    font-size: 13px;
+    padding: 14px 10px;
+  }
+
+  .pricing-feature {
+    font-size: 13px;
+    min-width: 140px;
+    line-height: 1.4;
+  }
+
+  .pricing-check,
+  .pricing-cross {
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+
+  .pricing-table-container {
+    margin: 15px 6px;
+  }
+
+  .pricing-main-table {
+    min-width: 480px;
+  }
+
+  .pricing-main-table th {
+    font-size: 12px;
+    padding: 12px 8px;
+  }
+
+  .pricing-main-table td {
+    font-size: 12px;
+    padding: 12px 8px;
+  }
+
+  .pricing-feature {
+    font-size: 12px;
+    min-width: 120px;
+  }
+
+  .pricing-check,
+  .pricing-cross {
+    width: 22px;
+    height: 22px;
+    font-size: 10px;
+  }
+}

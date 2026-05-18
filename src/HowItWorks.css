@@ -1,0 +1,65 @@
+.how-container {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f3eef0;
+}
+
+.how-subtitle {
+  color: #ff3c2f;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.how-title {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.how-steps {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.step-card {
+  max-width: 260px;
+}
+
+.step-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.step-icon.grey {
+  background: #d9d9d9;
+}
+
+.step-icon.dark {
+  background: #333;
+  color: white;
+}
+
+.step-icon.red {
+  background: #ff3c2f;
+  color: white;
+}
+
+.step-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.step-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}

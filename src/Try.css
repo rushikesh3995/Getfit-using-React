@@ -1,0 +1,348 @@
+/* 
+
+.side-panel {
+  width: 400px;
+  height: 100%;
+  background: #fff;
+  padding: 20px;
+  overflow-y: auto;
+  box-shadow: -5px 0 20px rgba(0,0,0,0.3);
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+
+.panel-header h2 {
+  margin: 0;
+}
+
+.panel-header p {
+  font-size: 14px;
+  color: #555;
+}
+
+.alert {
+  background: #ffe5e5;
+  color: #d60000;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form h4 {
+  margin-bottom: 10px;
+  color: #777;
+}
+
+.form input {
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+
+.city-select p {
+  margin: 10px 0 5px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chips span {
+  padding: 8px 12px;
+  border-radius: 20px;
+  background: #f1f1f1;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.terms {
+  font-size: 13px;
+  margin: 15px 0;
+}
+
+.terms span {
+  color: #007bff;
+  cursor: pointer;
+}
+
+
+.pay-btn {
+  background: red;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+} */
+
+
+
+
+
+
+/* OVERLAY */
+.panel-overlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.7);
+
+  display: flex;
+  justify-content: flex-end;
+
+  z-index: 9999;
+
+  backdrop-filter: blur(4px);
+}
+
+/* SIDE PANEL */
+.side-panel {
+  width: 430px;
+  height: 100vh;
+
+  background: #fff;
+
+  padding: 30px;
+
+  overflow-y: auto;
+
+  position: relative;
+
+  box-shadow: -8px 0 25px rgba(0,0,0,0.25);
+
+  animation: slideIn 0.35s ease;
+}
+
+/* ANIMATION */
+@keyframes slideIn {
+
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+
+  width: 42px;
+  height: 42px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #f3f3f3;
+
+  font-size: 22px;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.close-btn:hover {
+  background: red;
+  color: white;
+
+  transform: rotate(90deg);
+}
+
+/* HEADER */
+.panel-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.panel-header h2 {
+  margin: 0;
+
+  font-size: 58px;
+  font-weight: 700;
+
+  color: #222;
+}
+
+.panel-header p {
+  margin-top: 12px;
+
+  color: #666;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/* ALERT */
+.alert {
+  background: #ffe5e5;
+  color: #d60000;
+
+  padding: 15px;
+
+  border-radius: 10px;
+
+  text-align: center;
+
+  margin-bottom: 30px;
+
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* FORM */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form h4 {
+  margin-bottom: 18px;
+
+  text-align: center;
+
+  color: #666;
+
+  font-size: 32px;
+}
+
+/* INPUTS */
+.form input[type="text"],
+.form input[type="tel"] {
+
+  padding: 18px;
+
+  margin-bottom: 18px;
+
+  border-radius: 12px;
+  border: 1px solid #ddd;
+
+  font-size: 16px;
+
+  outline: none;
+
+  transition: 0.3s;
+}
+
+.form input:focus {
+  border-color: red;
+}
+
+/* AREA */
+.city-select {
+  margin-top: 10px;
+}
+
+.city-select p {
+  text-align: center;
+
+  font-size: 18px;
+
+  margin-bottom: 18px;
+}
+
+/* CHIPS */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 12px;
+}
+
+.chips span {
+  padding: 12px 18px;
+
+  border-radius: 30px;
+
+  background: #f1f1f1;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  font-size: 14px;
+}
+
+.chips span:hover {
+  background: red;
+  color: white;
+}
+
+/* TERMS */
+.terms {
+  margin: 25px 0;
+
+  text-align: center;
+
+  font-size: 14px;
+
+  color: #444;
+}
+
+.terms span {
+  color: #007bff;
+  cursor: pointer;
+}
+
+/* PAY BUTTON */
+.pay-btn {
+  padding: 18px;
+
+  border: none;
+  border-radius: 14px;
+
+  background: linear-gradient(to right, #ff1a1a, #d40000);
+
+  color: white;
+
+  font-size: 20px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.pay-btn:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 10px 20px rgba(255,0,0,0.3);
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+  .side-panel {
+    width: 100%;
+  }
+
+  .panel-header h2 {
+    font-size: 42px;
+  }
+
+  .form h4 {
+    font-size: 24px;
+  }
+}
