@@ -48,7 +48,7 @@
   cursor: pointer;
 }
 
-<<<<<<< HEAD
+
 .btn-outline {
   background: transparent;
   border: 1px solid white;
@@ -407,10 +407,9 @@
   }
 
   .hero-btn {
-=======
-
-
-
+    
+  }
+}
 
 
 /* Tablet screens and below */
@@ -498,12 +497,12 @@
   table {
     display: block;
     overflow-x: auto;
->>>>>>> 179c1869c4a3e1365f1cc35294dcd86a51f88a7b
+
     width: 100%;
   }
 }
 
-<<<<<<< HEAD
+
 /* SMALL MOBILE */
 @media (max-width: 480px) {
 
@@ -524,7 +523,7 @@
     font-size: 14px;
   }
 }
-=======
+
 /* Mobile screens (phones) */
 @media (max-width: 480px) {
   .header {
@@ -606,4 +605,3 @@
 
 
 
->>>>>>> 179c1869c4a3e1365f1cc35294dcd86a51f88a7b
